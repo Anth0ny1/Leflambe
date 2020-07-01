@@ -1,0 +1,542 @@
+/*!
+Theme Name: leflambe
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: leflambe
+Tags: custom-background, custom-h1, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+leflambe is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* .site-branding{
+	width: 15%;
+} */
+
+body{
+	font-family: 'Abel', sans-serif;
+}
+header{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin: 0 auto;
+	/* background: url('assets/img/banniere3.jpg'); */
+	background: url('assets/img/banniere7.jpg');
+	margin-bottom: 10px;
+	/* padding: 20px; */
+	color: white;
+	/* text-align: center; */
+}
+
+.site-brandingContent{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.site-branding{
+	/* margin: auto; */
+	text-align: center;
+}
+.logo h1{
+	padding-bottom: 10px;
+	font-size: 25px;
+}
+.logo h1 a{
+	color: white;
+	text-decoration: underline;
+	font-weight: bold;
+	/* text-decoration: none; */
+}
+.horraire{
+	border-radius: 15px;
+	text-align: center;
+	background: #E8CCA5;
+	/* height: 45%; */
+	color: black;
+	padding: 15px;
+
+}
+
+.horraireOuv{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+table{
+	margin: auto;
+}
+
+.contactHeader{
+	background: #95C6A6;
+	/* height: 20%; */
+	border-radius: 15px;
+	color: black;
+	padding: 20px;
+	text-align: center;
+}
+
+.contactHeader h2{
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+tr.label {
+	border-bottom: 1px solid white;
+	/* border-spacing: 2px; */
+}
+h2.horraireOuv{
+	padding-bottom: 10px;
+}
+/* nav{
+	width: 30%;
+} */
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	/* width: 110%; */
+}
+nav ul li{
+	/* margin-left: 15px; */
+}
+nav#site-navigation{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+nav #headerNavigation {
+	/* padding: 25px; */
+	/* background: #E6777D; */
+	border-radius: 15px;
+	margin-top: 90px;
+
+}
+
+nav #headerNavigation li{
+	/* padding: 25px; */
+
+}
+nav #headerNavigation a{
+	background: #E6777D;
+	padding: 15px;
+	display: block;
+	color: white;
+	border-right: 1px solid white;
+	text-decoration: none;
+	opacity: 0.9;
+}
+nav #headerNavigation a:hover{
+	opacity: 1;
+}
+nav #headerNavigation .last-child:last-child{
+	border-right: none;
+}
+footer{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#wrapper{
+	/* background: url('assets/img/fd2opa.jpg');
+	background-size: cover; */
+	background-color: #D3D3D3;
+	/* position: absolute;
+	z-index: 1; */
+}
+/* #wrapper{
+	position: relative;
+	z-index: 15;
+} */
+.carouselImg{
+	display: block;
+	margin: auto;
+}
+ul.slides li.blank{
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-around; */
+	/* display: inline; */
+	display: flex !important;
+	background: white;
+	width: 200px;
+	height: 200px
+}
+#wrapper h1{
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 25px;
+	padding: 45px;
+}
+.row{
+	display: flex;
+	justify-content: space-around;
+}
+form{
+	margin: 20px;
+}
+.mapsContact{
+	margin: 20px;
+}
+.margin{
+	margin: 0 auto;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.wrap{
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	margin: 0 auto;
+}
+
+/* .blocService{
+	padding: 30px;
+} */
+.blocService h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 15px;
+}
+.service{
+	display: flex;
+}
+.service .description{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.coordonees h2{
+	text-align: center;
+	font-size: 25px;
+	text-decoration: underline;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.coordonees p{
+	padding: 5px;
+	font-size: 18px;
+	text-align: center;
+}
+/* .mecanique, .carosserie{
+	display: flex;
+}
+
+.blocCarosserie h2, .blocMecanique h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 15px;
+} */
+.content{
+	max-width: 70%;
+	/* z-index: 10; */
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.blocTxtImg{
+	/* width: 70%;
+	margin: auto; */
+
+	display: flex;
+	padding: 20px;
+}
+
+.description{
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	word-wrap: break-word;
+	width: 70%;
+	font-size: 20px;
+	line-height: 25px;
+
+}
+
+.center{
+	margin: auto;
+	text-align: center;
+}
+footer{
+	background: #A9A9A9;
+	padding: 20px 0px;
+}
+.site-info{
+	text-align: center;
+}
+.site-info .logo h1{
+	font-size: 20px;
+}
+#footerNavigation{
+	display: flex;
+	padding-bottom: 20px;
+}
+#footerNavigation a{
+	display: block;
+	padding: 5px;
+	color: black;
+	border-right: 1px solid black;
+	text-decoration: none;
+	opacity: 0.9;
+}
+#footerNavigation .last-child:last-child{
+	border-right: none;
+}
+
+.contactFooter h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+.contactFooter{
+	text-align: center;
+}
+
+form p.center{
+	margin: auto;
+}
+form{
+/* margin: auto;
+max-width: 50%; */
+text-align: center;
+}
+
+/* input[type=submit]{
+	width: 100%;
+} */
+/*
+.cssform p{
+width: 320px;
+clear: left;
+margin: 0;
+padding: 5px 0 8px 0;
+padding-left: 155px;
+border-top: 1px dashed gray;
+height: 1%;
+} */
+
+/* .cssform label{
+font-weight: bold;
+float: left;
+margin-left: -155px;
+width: 150px;
+} */
+
+
+/* .cssform input{
+	width: 300px;
+}
+.cssform textarea{
+width: 300px;
+height: 150px;
+} */
+
+/*.threepxfix class below:
+Targets IE6- ONLY. Adds 3 pixel indent for multi-line form contents.
+to account for 3 pixel bug: http://www.positioniseverything.net/explorer/threepxtest.html
+*/
+
+/* * html .threepxfix{
+margin-left: 3px;
+} */
+/* .center{
+	text-align: center;
+} */
+
+.occasionBloc{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	/* width: 70%; */
+	margin: auto;
+}
+
+.occasionBloc h2{
+	text-align: center;
+	font-size: 18px;
+	padding: 15px;
+}
+
+.singleOccasion{
+	display: flex;
+}
+
+
+.gallery{
+	width: 15%;
+}
+.gallery img{
+	padding: 5px;
+}
+ul.filtre{
+	/* background: grey; */
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+.filtre li{
+	/* margin: auto; */
+	margin: auto 15px;
+
+}
+
+.filtre a{
+	background: #7F7F7F;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	border: solid 1px black;
+	border-radius: 5px;
+}
+
+.filtre a:hover{
+	/* background: #9E9E9E; */
+	opacity: 0.8;
+}
+.blocFiltre{
+
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.filtreContent{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+.descriptionVoiture{
+	text-align: center;
+	padding: 20px;
+}
+.imgMarque{
+	margin: 0 auto;
+}
+.filtreContent h2{
+	text-align: center;
+	padding: 20px;
+}
+
+#wrapper h1.termName{
+	padding: 20px;
+	text-transform: uppercase;
+}
+nav.listOfTerm{
+}
+
+div.polaroid {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 50px;
+  margin-bottom: 50px;
+	border-radius: 10px 10px 0 0;
+}
+
+div.polaroid a img{
+	border-radius: 10px 10px 0 0;
+}
+h2.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+li a.linkOccasion {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.wpcf7-form p{
+	padding: 7px;
+}
+
+@media screen and (max-width: 1100px){
+	.gallery{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 850px){
+	.contactHeader{
+		padding: 3px;
+	}
+	.horraire{
+		padding: 3px;
+	}
+}
